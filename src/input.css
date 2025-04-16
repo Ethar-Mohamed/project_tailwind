@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+.div1{
+  @apply flex justify-center w-full h-full
+  
+}
+.div2{
+  @apply bg-indigo-500 border-1 border-indigo-600 rounded-lg  p-1 mx-2
+ 
+}
+.btn{
+  @apply font-medium bg-indigo-500 p-2 gap-x-2 mx-2 border-1 border-indigo-600 rounded-lg
+}
+.light{
+  @apply  bg-linear-to-r from-pink-100 via-purple-100 to-white
+  }
+.darkmode{
+@apply   dark:bg-linear-to-r dark:from-stone-500 dark:to-white  dark:text-white
+}
+
